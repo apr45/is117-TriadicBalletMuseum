@@ -22,6 +22,13 @@ A systematic log of successful prompts used to generate the design, code, and co
 * **Result:** Developed a three-sprint roadmap focusing on core structural setup, thematic content population, and final media integration.
 
 ---
+
+## Phase 4: Title Page Initial Setup
+* **Goal:** Create a high-fidelity title page following the guidelines of AGENTS.md
+* **Prompt Text:** > "Using the given AGENTS.md, write HTML and CSS code to create a title page that introduces the audience to the Triadic Ballet Exhibition. Include an interactive button leading to the home page and add a link reference to a video that will play in the background of the page."
+* **Result:** Generated title.html with an optimized video tag using autoplay and loop attributes and main.css file with css variables for button visual design.
+
+---
 # Example Templete
 ## Phase 2: [Current State of the project]
 * **Goal:** [e.g., Create the "Triad" Color Theme]
