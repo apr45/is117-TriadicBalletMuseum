@@ -9,7 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         // Pointing to the new location in src/pages/
-        main: resolve(__dirname, 'src/pages/index.html'), 
+        main: resolve(__dirname, 'src/pages/title.html'), 
         home: resolve(__dirname, 'src/pages/home.html'),
         bauhaus: resolve(__dirname, 'src/pages/bauhaus.html'),
         biography: resolve(__dirname, 'src/pages/biography.html'),
