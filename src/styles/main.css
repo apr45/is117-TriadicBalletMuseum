@@ -1,0 +1,39 @@
+/* src/styles/main.css */
+:root {
+  /* The Triadic Palette */
+  --yellow-act: #F5D328;
+  --pink-act: #F2A2B1;
+  --black-act: #1A1A1A;
+  --white-neutral: #FFFFFF;
+  
+  /* Typography */
+  --font-main: 'Helvetica', 'Futura', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--white-neutral);
+  color: var(--black-act);
+}
+
+/* Strict Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Rule of Three */
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Geometric UI Elements */
+.btn-geometric {
+  background: var(--black-act);
+  color: var(--white-neutral);
+  border: none;
+  padding: 1.5rem 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* No rounded corners allowed */
+}
