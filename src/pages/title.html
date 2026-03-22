@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Triadic Ballet | Exhibition</title>
     <link rel="stylesheet" href="../styles/main.css">
 </head>
+
 <body class="title-page">
     <div class="video-background">
-        <video autoplay muted loop id="hero-video">
-            <source src="/public/temp" type="video/mp4">
+        <video autoplay muted loop id="hero-video" playsinline>
+            <source src="../../public/videos/Schlemmer's Triadic Ballet - Act 3 Clip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
+
+        <audio id="bg-audio" loop>
+            <source src="../../public/audio/Schlemmer's Triadic Ballet - Act 3 Audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <button id="unmute-toggle" class="unmute-btn" aria-label="Toggle Audio">
+            <div class="triangle-icon"></div>
+        </button>
     </div>
 
     <main class="hero-content">
         <h1>DAS TRIADISCHES BALLETT</h1>
         <p>An Experimental Journey into Threeness</p>
+        
         <a href="home.html">
             <button class="btn-geometric">Enter Exhibition</button>
         </a>
     </main>
+
+    <script type="module" src="../js/main.js"></script>
 </body>
+
+<footer>
+    <aside class="video-credit">
+        SOURCE: <a href="https://www.youtube.com/watch?v=bMm1LpiSbqU" target="_blank">Oskar Schlemmer’s Bauhaus’ Triadic Ballet</a>
+    </aside>
+</footer>
+
 </html>
