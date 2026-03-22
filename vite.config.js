@@ -8,14 +8,15 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        // Pointing to the new location in src/pages/
-        main: resolve(__dirname, 'src/pages/title.html'), 
+        // Pointing to your new root dummy
+        main: resolve(__dirname, 'index.html'), 
+        title: resolve(__dirname, 'src/pages/title.html'),
         home: resolve(__dirname, 'src/pages/home.html'),
         bauhaus: resolve(__dirname, 'src/pages/bauhaus.html'),
         biography: resolve(__dirname, 'src/pages/biography.html'),
         archive: resolve(__dirname, 'src/pages/archive.html'),
-        gallery: resolve(__dirname, 'src/pages/gallery.html'),
-      },
+        gallery: resolve(__dirname, 'src/pages/gallery.html')
+      }
     },
   },
 })
