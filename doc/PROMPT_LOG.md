@@ -29,6 +29,13 @@ A systematic log of successful prompts used to generate the design, code, and co
 * **Result:** Generated title.html with an optimized video tag using autoplay and loop attributes and main.css file with css variables for button visual design.
 
 ---
+
+## Phase 5: Global Navigation & CTA
+* **Goal:** Implement a header including the names of all available website pages and a "Contact Museum" footer.
+* **Prompt Text:** > "Let's focus on creating a global navigation that allows users to access one page from another, as well as a call-to-action, so visitors can easily contact the museum."
+* **Result:** Developed persistent navigation across all website pages (except title page) and a functional email link for museum inquiries.
+
+---
 # Example Templete
 ## Phase 2: [Current State of the project]
 * **Goal:** [e.g., Create the "Triad" Color Theme]
