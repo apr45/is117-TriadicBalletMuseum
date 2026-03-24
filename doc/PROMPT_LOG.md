@@ -36,6 +36,12 @@ A systematic log of successful prompts used to generate the design, code, and co
 * **Result:** Developed persistent navigation across all website pages (except title page) and a functional email link for museum inquiries.
 
 ---
+
+## Phase 6: Home Page Architecture
+* **Goal:** Creating a top-down, scrolling experience covering the 5 core content areas of the Triadic Ballet: Origin, Concept, Acts, Costumes, and Music.
+* **Prompt Text:** > Moving on to Sprint 2, let's create a layout for the home page before we proceed to research and input the necessary information.
+* **Result:** Established full-width horizontal sections for eacg core content area based on the ballet's style.
+---
 # Example Templete
 ## Phase 2: [Current State of the project]
 * **Goal:** [e.g., Create the "Triad" Color Theme]

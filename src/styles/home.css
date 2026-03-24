@@ -4,20 +4,20 @@
     padding-top: 80px;
 }
 
-/* Background "Ghost" Text */
+/* Pure Mathematical Grid Background */
+body.home-page-stacked {
+    background-color: var(--white-neutral);
+    /* Creates a subtle 100px x 100px blueprint grid */
+    background-image: 
+        linear-gradient(rgba(26, 26, 26, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26, 26, 26, 0.12) 1px, transparent 1px);
+    background-size: 100px 100px;
+    background-attachment: fixed;
+    margin: 0;
+}
+
 .bg-spine {
-    position: fixed;
-    right: 20px;
-    top: 0;
-    height: 100vh;
-    writing-mode: vertical-rl;
-    font-weight: 900;
-    font-size: 8rem;
-    color: rgba(26, 26, 26, 0.03); 
-    z-index: -1;
-    text-transform: uppercase;
-    letter-spacing: -0.08em;
-    pointer-events: none;
+    display: none; 
 }
 
 /* Grid & Section Locking */
