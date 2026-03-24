@@ -39,7 +39,7 @@ A systematic log of successful prompts used to generate the design, code, and co
 
 ## Phase 6: Home Page Architecture
 * **Goal:** Creating a top-down, scrolling experience covering the 5 core content areas of the Triadic Ballet: Origin, Concept, Acts, Costumes, and Music.
-* **Prompt Text:** > Moving on to Sprint 2, let's create a layout for the home page before we proceed to research and input the necessary information.
+* **Prompt Text:** > "Moving on to Sprint 2, let's create a layout for the home page before we proceed to research and input the necessary information."
 * **Result:** Established full-width horizontal sections for eacg core content area based on the ballet's style.
 ---
 # Example Templete
