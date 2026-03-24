@@ -1,0 +1,342 @@
+.top-down-exhibit {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+/* Background "Ghost" Text */
+.bg-spine {
+    position: fixed;
+    right: 20px;
+    top: 0;
+    height: 100vh;
+    writing-mode: vertical-rl;
+    font-weight: 900;
+    font-size: 8rem;
+    color: rgba(26, 26, 26, 0.03); 
+    z-index: -1;
+    text-transform: uppercase;
+    letter-spacing: -0.08em;
+    pointer-events: none;
+}
+
+/* Grid & Section Locking */
+.stack-section {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    min-height: 60vh;
+    padding: 60px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.stack-section.no-padding { padding: 0; grid-template-columns: 1fr; }
+
+.stack-meta {
+    font-weight: 900;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    border-right: 2px solid var(--black-act);
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.stack-content {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Origin Section Typography */
+.origin-title { font-size: 5.5rem; line-height: 0.8; margin: 0; color: var(--yellow-act)}
+.indent-1 { padding-left: 100px; color: var(--pink-act); }
+.indent-2 { padding-left: 200px; color: var(--black-act)}
+.indent-3 { 
+    padding-left: 300px; 
+    max-width: 600px;
+}
+
+/* Unique Concept Grid */
+.concept-hero {
+    margin-bottom: 60px;
+}
+
+.concept-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--black-act);
+    margin-top: 40px;
+}
+
+.concept-box {
+    border: 1px solid var(--black-act);
+    padding: 30px;
+}
+
+.concept-box:hover {
+    background-color: #f9f9f9;
+}
+
+.concept-label {
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--black-act);
+}
+
+.concept-visual {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.concept-visual-text {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.stack-section.no-meta {
+    grid-template-columns: 1fr;
+}
+
+.no-meta .stack-meta {
+    display: none;
+}
+
+.stack-content.full-width {
+    padding-left: 0;
+}
+
+.stack-section.no-meta::after {
+    display: none;
+}
+
+
+.d-icon {
+    width: 12px;
+    height: 30px;
+    background: var(--black-act);
+    display: inline-block;
+}
+
+.concept-box p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    max-width: 200px;
+}
+
+/* Act Panels Expansion */
+.full-bleed-acts {
+    padding-left: 0;
+}
+
+.act-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 60vh;
+    width: 100%;
+}
+
+.act-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: flex 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.act-panel:hover { flex: 1.8; cursor: crosshair; }
+
+.act-label { font-size: 3.5rem; font-weight: 900; transition: transform 0.3s ease; }
+.act-panel:hover .act-label { transform: translateY(-20px); }
+
+.act-hover-content {
+    position: absolute;
+    bottom: -40px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    transition: bottom 0.4s ease;
+}
+
+.act-panel:hover .act-hover-content { bottom: 60px; }
+
+.yellow { background: var(--yellow-act); }
+.pink { background: var(--pink-act); }
+.black { background: var(--black-act); color: var(--white-neutral); }
+
+.border-bottom { border-bottom: 2px solid var(--black-act); }
+
+/*Form Cinematic Blueprint */
+.form-cinematic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.bauhaus-title-sm {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.form-notes {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.note-label {
+    font-weight: 900;
+    font-size: 0.7rem;
+    color: var(--pink-act);
+    letter-spacing: 0.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-video-showcase {
+    position: relative;
+    padding: 20px;
+}
+
+.video-frame {
+    position: relative;
+    border: 2px solid var(--black-act);
+    overflow: hidden;
+    background: transparent;
+}
+
+.costume-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--black-act);
+    color: var(--white-neutral);
+    font-size: 0.6rem;
+    font-weight: 900;
+    padding: 4px 8px;
+    letter-spacing: 0.1em;
+}
+
+.border-all {
+    border: 2px solid var(--black-act);
+}
+
+/* Section 05: Sound - Phonograph Grid */
+.sound-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.composer-image-frame {
+    position: relative;
+    aspect-ratio: 3/4; /* Matches typical portrait dimensions */
+    border: 2px solid var(--black-act);
+    background: #f0f0f0; /* Light grey background for any letterboxing */
+    overflow: hidden;
+}
+
+.composer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sound-theory-notes {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid var(--black-act);
+    padding-left: 30px;
+}
+
+.note-label {
+    font-weight: 900;
+    font-size: 0.7rem;
+    color: var(--pink-act);
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.note-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Section 05: Photo Credit Styling */
+.composer-credit {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    opacity: 0.7; /* Subdued to keep focus on the image */
+}
+
+.credit-label {
+    font-weight: 900;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: var(--black-act);
+}
+
+.credit-text {
+    font-size: 0.65rem;
+    font-family: var(--font-mono, monospace); /* Monospace gives it a "typed" archival feel */
+    text-transform: uppercase;
+}
+
+.composer-bio {
+    margin-top: 25px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Section 05: Sound - Audio Specimen */
+.audio-specimen {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 1px solid var(--black-act);
+}
+
+.player-label {
+    display: block;
+    font-weight: 900;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 12px;
+    color: var(--pink-act);
+}
+
+.bauhaus-audio {
+    width: 100%;
+    height: 35px;
+    /* This filter makes the standard Chrome/Safari player match a dark Bauhaus aesthetic */
+    filter: invert(100%) hue-rotate(180deg) brightness(1.2);
+}
