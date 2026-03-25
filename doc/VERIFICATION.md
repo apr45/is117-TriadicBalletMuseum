@@ -7,14 +7,23 @@ This document serves as the high-confidence "Source of Truth" for the Triadic Ba
 ## Evidence Ledger
 
 ### Claim 1
-* **Claim:** The Triadic Ballet features 18 costumes designed for three dancers, focusing on the "threeness" of squares, circles, and triangles.
-* **Source Link(s):** [https://www.moma.org/collection/works/60721](https://www.moma.org/collection/works/60721)
-* **Notes:** MoMA's archival sketches confirm the specific shape-to-costume mapping. This directly informs the Gallery Page and Home Page structure.
+* **Claim:** The Triadic Ballet was designed and choreographed by Oskar Schlemmer to transform the human form into a medium for exploring the relationship between body and space.
+* **Source Link(s):** [https://www.dailyartmagazine.com/100-years-of-bauhaus-its-dance-time-the-triadic-ballet/](https://www.dailyartmagazine.com/100-years-of-bauhaus-its-dance-time-the-triadic-ballet/)
+* **Notes:** This claim confirms the artistic intent and identifies the ballet as an avant-garde production that prioritized geometric components over traditional fluidity.
 
 ### Claim 2
-* **Claim:** The musical score for the ballet was originally composed by Paul Hindemith for some reconstructions, focusing on mechanical, avant-garde sounds.
-* **Source Link(s):** [https://www.bauhaus.de](https://www.bauhaus.de)
-* **Notes:** While Hindemith is the most cited, original 1922 performances used varied arrangements. This nuance will be reflected on the Archive Page.
+* **Claim:** The production premiered in 1922 at the Württemberg Landestheater in Stuttgart, Germany.
+* **Source Link(s):** [https://www.seeingdance.com/the-triadic-ballet-220928/](https://www.seeingdance.com/the-triadic-ballet-220928/)
+* **Notes:** This is a vital historical timestamp for the exhibition's provenance.
 
+### Claim 3
+* **Claim:** The original 1922 film recording of the performance did not survive.
+* **Source Link(s):** [https://www.seeingdance.com/the-triadic-ballet-220928/](https://www.seeingdance.com/the-triadic-ballet-220928/)
+* **Notes:** This explains the necessity for modern interpretations and archival reconstructions in your project.
+
+### Claim 4
+* **Claim:** The ballet functions as a Total Work of Art (Gesamtkunstwerk) by synthesizing dance, costume, music, and set design.
+* **Source Link(s):** [https://www.dailyartmagazine.com/100-years-of-bauhaus-its-dance-time-the-triadic-ballet/](https://www.dailyartmagazine.com/100-years-of-bauhaus-its-dance-time-the-triadic-ballet/)
+* **Notes:** This aligns with the Bauhaus Aesthetic of combining multiple artistic visions into a unified experience.
 ---
 *Note: Any new claim introduced in SPRINT logs must be added here as a numbered Claim Block before the site goes live.*

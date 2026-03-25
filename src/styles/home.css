@@ -4,10 +4,9 @@
     padding-top: 80px;
 }
 
-/* Pure Mathematical Grid Background */
+/* Mathematical Grid Background */
 body.home-page-stacked {
     background-color: var(--white-neutral);
-    /* Creates a subtle 100px x 100px blueprint grid */
     background-image: 
         linear-gradient(rgba(26, 26, 26, 0.12) 1px, transparent 1px),
         linear-gradient(90deg, rgba(26, 26, 26, 0.12) 1px, transparent 1px);
@@ -49,13 +48,22 @@ body.home-page-stacked {
     justify-content: center;
 }
 
-/* Origin Section Typography */
+/* Section 01 Layout */
 .origin-title { font-size: 5.5rem; line-height: 0.8; margin: 0; color: var(--yellow-act)}
 .indent-1 { padding-left: 100px; color: var(--pink-act); }
 .indent-2 { padding-left: 200px; color: var(--black-act)}
-.indent-3 { 
-    padding-left: 300px; 
-    max-width: 600px;
+.indent-3 {
+    margin-left: 250px;
+    width: 80%;
+    padding-right: 50px;
+}
+
+.body-text {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 0; 
+    font-weight: 400;
+    color: var(--black-act);
 }
 
 /* Unique Concept Grid */
@@ -120,7 +128,6 @@ body.home-page-stacked {
 .stack-section.no-meta::after {
     display: none;
 }
-
 
 .d-icon {
     width: 12px;
