@@ -193,7 +193,34 @@ body.home-page-stacked {
     letter-spacing: 0.1em;
 }
 
-/* Act Panels Expansion */
+/* Section 03 Header Styling */
+.act-header-group {
+    margin-bottom: 40px;
+}
+
+.act-main-title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--black-act);
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.act-main-desc {
+    margin-top: 30px;                   
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: var(--black-act);
+}
+
+#structure .stack-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
 .full-bleed-acts {
     padding-left: 0;
 }
