@@ -66,80 +66,131 @@ body.home-page-stacked {
     color: var(--black-act);
 }
 
-/* Unique Concept Grid */
-.concept-hero {
-    margin-bottom: 60px;
-}
-
+/* Section 02 Layout */
 .concept-title {
-    font-size: 4.5rem;
-    font-weight: 900;
-    line-height: 0.9;
-    letter-spacing: -0.02em;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 0.8;           
+    margin: 0;                   
 }
 
-.concept-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid var(--black-act);
-    margin-top: 40px;
+.txt-yellow { color: var(--yellow-act); }
+.txt-pink   { color: var(--pink-act); }
+.txt-black  { color: var(--black-act); }
+
+.concept-desc {
+    margin-top: 30px;                   
+    font-size: 1.1rem;
+    line-height: 1.75;
 }
 
-.concept-box {
-    border: 1px solid var(--black-act);
-    padding: 30px;
+.indent-concept {
+    margin-left: 100px;
 }
 
-.concept-box:hover {
-    background-color: #f9f9f9;
-}
-
-.concept-label {
-    font-weight: 900;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    color: var(--black-act);
-}
-
-.concept-visual {
+.concept-shape-row {
     display: flex;
-    gap: 15px;
-    margin: 20px 0;
+    justify-content: center; 
+    gap: 100px;               
+    align-items: flex-end; 
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 20px;
 }
 
-.concept-visual-text {
+.shape-wrap {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--black-act);
+    transition: background-color 0.3s ease;
+}
+
+.shape-item {
+    width: 290px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid var(--black-act);
+}
+
+.reveal-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.shape-label {
+    font-size: 2.5rem;
     font-weight: 900;
-    font-size: 2rem;
-    margin: 15px 0;
+    transition: transform 0.4s ease;
 }
 
-.stack-section.no-meta {
-    grid-template-columns: 1fr;
+.shape-item:hover .reveal-content {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.no-meta .stack-meta {
-    display: none;
+.shape-item:hover .shape-label {
+    transform: translateY(-10px);
 }
 
-.stack-content.full-width {
-    padding-left: 0;
+.circle-frame:hover { background-color: var(--yellow-act); border-color: var(--yellow-act); }
+.square-frame:hover { background-color: var(--pink-act); border-color: var(--pink-act); }
+.triangle-frame:hover { 
+    background-color: var(--black-act); 
+    border-color: var(--black-act);
+    color: var(--white-neutral); 
 }
 
-.stack-section.no-meta::after {
-    display: none;
+.circle-frame { border-radius: 50%; }
+.triangle-frame {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    border: none;
 }
 
-.d-icon {
-    width: 12px;
-    height: 30px;
-    background: var(--black-act);
-    display: inline-block;
+.triangle-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--black-act);
+    clip-path: polygon(
+        50% 0%, 0% 100%, 100% 99%, 50% 0%, 
+        50% 1.4%, 98% 98%, 1.4% 99%, 50% 1.4%
+    );
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
 }
 
-.concept-box p {
-    font-size: 0.85rem;
+.triangle-frame:hover::before {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: var(--black-act);
+}
+
+.triangle-frame:hover {
+    color: var(--white-neutral);
+}
+
+.shape-text {
+    font-size: 0.75rem;
+    font-weight: 900;
     line-height: 1.4;
-    max-width: 200px;
+    letter-spacing: 0.1em;
 }
 
 /* Act Panels Expansion */
