@@ -31,9 +31,23 @@ This document serves as the high-confidence "Source of Truth" for the Triadic Ba
 * **Source Link(s):** [https://www.schlemmer.org/triadic-ballet](https://www.schlemmer.org/triadic-ballet)
 * **Notes:** This principle governs the "dematerialization" of the performer, where the human body is reconstructed as a spatial "figurine" through its relationship to the three physical dimensions: height, width, and depth.
 
-### Claim 5
+### Claim 6
 * **Claim:** Though plotless, the ballet follows a thematic progression through 3 unique acts that transition from a bright "burlesque" atmosphere to a "solemn" festive stage, and finally to a dematerialized "mystical" void.
 * **Source Link(s):** [https://www.seeingdance.com/the-triadic-ballet-220928/](https://www.seeingdance.com/the-triadic-ballet-220928/)
 * **Notes:** This progression is a journey from the physical world to a transcendental, abstract space.
+
+### Claim 7
+* **Claim:** Schlemmer utilized primary geometric shapes (cubes, pyramids, spheres) to strip away human emotion and transform dancers into "marionette-like figurines".
+* **Source Link(s):** [https://www.seeingdance.com/the-triadic-ballet-220928/](https://www.seeingdance.com/the-triadic-ballet-220928/)
+* **Notes:** The source describes a "dehumanizing" process where anatomy is subordinate to geometry. It details how these "bizarre" silhouettes were specifically designed to replace the natural expressive capacity of the human body with abstract, mechanical forms.
+
+### Claim 8
+* **Claim:** The 18 costumes were constructed from unconventional, heavy materials such as metal sheets, wire, stiff paper-mâché, and padded fabric to create rigid silhouettes.
+* **Source Link(s):** [https://www.seeingdance.com/the-triadic-ballet-220928/](https://www.seeingdance.com/the-triadic-ballet-220928/)
+* **Notes:** The documentation emphasizes that these industrial materials were chosen for their lack of flexibility. This material choice effectively "dealt a death blow" to classical ballet's fluidity, forcing the "controlled and reserved" gait that defines the performance.
+
+### Claim 9
+* **Claim:** More than half of the original 1922 costumes were destroyed over time; the remaining pieces are currently preserved at the Neue Staatsgalerie in Stuttgart, Germany.
+* **Source Link(s):** [https://www.staatsgalerie.de/en/exhibitions/archive/moved-by-schlemmer-100-years-of-triadic-ballet](https://www.staatsgalerie.de/en/exhibitions/archive/moved-by-schlemmer-100-years-of-triadic-ballet)
+* **Notes:** The Staatsgalerie confirms its commitment to Schlemmer's legacy, housing the largest coherent body of his work. This includes seven of the original surviving figurines (costumes) and the artist’s written estate, which serves as the primary reference for understanding the "historical cosmos" of the ballet.
 ---
-*Note: Any new claim introduced in SPRINT logs must be added here as a numbered Claim Block before the site goes live.*

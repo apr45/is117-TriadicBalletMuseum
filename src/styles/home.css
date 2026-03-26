@@ -68,7 +68,7 @@ body.home-page-stacked {
 
 /* Section 02 Layout */
 .concept-title {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 0.8;           
     margin: 0;                   
@@ -199,9 +199,9 @@ body.home-page-stacked {
 }
 
 .act-main-title {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    line-height: 0.8;
+    line-height: 0.8;  
     color: var(--black-act);
     margin: 0 0 15px 0;
     text-transform: uppercase;
@@ -263,52 +263,58 @@ body.home-page-stacked {
 
 .border-bottom { border-bottom: 2px solid var(--black-act); }
 
-/*Form Cinematic Blueprint */
+/*Section 04 Overlay */
 .form-cinematic-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1.2fr; 
     gap: 40px;
-    align-items: center;
+    align-items: start;
+    width: 100%;
 }
 
-.bauhaus-title-sm {
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 0.9;
-    margin-bottom: 20px;
-}
-
-.form-notes {
-    margin-top: 40px;
+.form-text-block {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
-.note-label {
-    font-weight: 900;
-    font-size: 0.7rem;
-    color: var(--pink-act);
-    letter-spacing: 0.2em;
-    display: block;
-    margin-bottom: 5px;
+.form-title-lg {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 0.8; 
+    margin-top: 0; 
+    margin-bottom: 0px;
+}
+
+.indent-form {
+    margin-top: -10px;                   
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-left: 60px;
+    max-width: 85%;
 }
 
 .form-video-showcase {
-    position: relative;
-    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-text-block {
+    grid-column: 1;
 }
 
 .video-frame {
-    position: relative;
+    width: 100%;
+    max-width: 600px;
     border: 2px solid var(--black-act);
-    overflow: hidden;
-    background: transparent;
+    position: relative;
 }
 
 .costume-video {
     width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -322,6 +328,23 @@ body.home-page-stacked {
     font-weight: 900;
     padding: 4px 8px;
     letter-spacing: 0.1em;
+}
+
+.label-link {
+    color: var(--yellow-act);
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    display: block;
+}
+
+.video-overlay-label:hover {
+    background: var(--yellow-act);
+}
+
+.video-overlay-label:hover .label-link {
+    color: var(--black-act); /* Text turns black for contrast against pink */
 }
 
 .border-all {
