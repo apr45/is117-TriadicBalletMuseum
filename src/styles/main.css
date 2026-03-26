@@ -126,7 +126,7 @@ body {
     background-color: var(--white-neutral);
     color: var(--black-act);
     border-top: 2px solid var(--black-act);
-    padding: 60px 40px;
+    padding: 10px 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -151,7 +151,6 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 .footer-shapes {
@@ -167,7 +166,7 @@ body {
     font-size: 0.75rem;
     line-height: 1.8;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .btn-cta {
