@@ -50,4 +50,14 @@ This document serves as the high-confidence "Source of Truth" for the Triadic Ba
 * **Claim:** More than half of the original 1922 costumes were destroyed over time; the remaining pieces are currently preserved at the Neue Staatsgalerie in Stuttgart, Germany.
 * **Source Link(s):** [https://www.staatsgalerie.de/en/exhibitions/archive/moved-by-schlemmer-100-years-of-triadic-ballet](https://www.staatsgalerie.de/en/exhibitions/archive/moved-by-schlemmer-100-years-of-triadic-ballet)
 * **Notes:** The Staatsgalerie confirms its commitment to Schlemmer's legacy, housing the largest coherent body of his work. This includes seven of the original surviving figurines (costumes) and the artist’s written estate, which serves as the primary reference for understanding the "historical cosmos" of the ballet.
+
+### Claim 10
+* **Claim:** For the 1922 premiere in Stuttgart, Schlemmer utilized an "assortment of classical music" before later collaborating with Paul Hindemith to create a unified score.
+* **Source Link(s):** [https://www.seeingdance.com/the-triadic-ballet-220928/](https://www.seeingdance.com/the-triadic-ballet-220928/)
+* **Notes:** The original performance lacked a singular composition, featuring a patchwork of works by Handel, Haydn, and Mozart. This reflects the transition from classical tradition to the modern "mechanical" sound Schlemmer eventually desired.
+
+### Claim 11
+* **Claim:** Only 8 minutes of the original collaborative music survived; however, fragments are preserved within Hindemith’s Suite for Mechanical Organ.
+* **Source Link(s):** [https://albertehrnrooth.com/wp-content/uploads/2020/09/Bauhaus-Limelight-2019.pdf](https://albertehrnrooth.com/wp-content/uploads/2020/09/Bauhaus-Limelight-2019.pdf)
+* **Notes:** Although the complete 1922 score was lost, these surviving fragments from the Suite for Mechanical Organ provide the essential "acoustic DNA" for modern reconstructions.
 ---

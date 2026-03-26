@@ -49,7 +49,7 @@ body.home-page-stacked {
 }
 
 /* Section 01 Layout */
-.origin-title { font-size: 5.5rem; line-height: 0.8; margin: 0; color: var(--yellow-act)}
+.origin-title { font-size: 5.5rem; line-height: 0.8; margin: 15px; color: var(--yellow-act)}
 .indent-1 { padding-left: 100px; color: var(--pink-act); }
 .indent-2 { padding-left: 200px; color: var(--black-act)}
 .indent-3 {
@@ -71,7 +71,7 @@ body.home-page-stacked {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 0.8;           
-    margin: 0;                   
+    margin: 15px;                   
 }
 
 .txt-yellow { color: var(--yellow-act); }
@@ -203,13 +203,13 @@ body.home-page-stacked {
     font-weight: 700;
     line-height: 0.8;  
     color: var(--black-act);
-    margin: 0 0 15px 0;
+    margin-top: 2%;
     text-transform: uppercase;
     letter-spacing: -0.02em;
 }
 
 .act-main-desc {
-    margin-top: 30px;                   
+    margin-top: -20px;                   
     font-size: 1.1rem;
     line-height: 1.75;
     color: var(--black-act);
@@ -282,7 +282,7 @@ body.home-page-stacked {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 0.8; 
-    margin-top: 0; 
+    margin-top: 15px; 
     margin-bottom: 0px;
 }
 
@@ -344,26 +344,33 @@ body.home-page-stacked {
 }
 
 .video-overlay-label:hover .label-link {
-    color: var(--black-act); /* Text turns black for contrast against pink */
+    color: var(--black-act);
 }
 
 .border-all {
     border: 2px solid var(--black-act);
 }
 
-/* Section 05: Sound - Phonograph Grid */
+/* Section 05 Overlay*/
 .sound-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 60px;
-    align-items: flex-start;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+.sound-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .composer-image-frame {
     position: relative;
-    aspect-ratio: 3/4; /* Matches typical portrait dimensions */
+    aspect-ratio: 3/4;
     border: 2px solid var(--black-act);
-    background: #f0f0f0; /* Light grey background for any letterboxing */
+    background: #f0f0f0;
     overflow: hidden;
 }
 
@@ -371,6 +378,34 @@ body.home-page-stacked {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+    filter: grayscale(1) contrast(1.2) brightness(1.1);
+    transition: all 0.5s ease;
+}
+
+.composer-showcase {
+    grid-column: 2;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.composer-image-frame {
+    width: 100%;
+    max-width: 550px;
+    border: 2px solid var(--black-act);
+    background: var(--black-act);
+    overflow: hidden;
+
+}.composer-image-frame {
+    width: 100%;
+    max-width: 350px;
+    margin-top: -6%;
+    border: 2px solid var(--black-act);
+    background: var(--black-act);
+    overflow: hidden;
 }
 
 .sound-theory-notes {
@@ -382,41 +417,31 @@ body.home-page-stacked {
     padding-left: 30px;
 }
 
+.sound-info-block {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .note-label {
     font-weight: 900;
     font-size: 0.7rem;
     color: var(--pink-act);
     letter-spacing: 0.2em;
-    margin-bottom: 5px;
     display: block;
 }
 
 .note-item p {
     font-size: 0.9rem;
     line-height: 1.5;
-    margin: 0;
 }
 
-/* Section 05: Photo Credit Styling */
 .composer-credit {
     margin-top: 12px;
     display: flex;
     gap: 8px;
     align-items: baseline;
-    opacity: 0.7; /* Subdued to keep focus on the image */
-}
-
-.credit-label {
-    font-weight: 900;
-    font-size: 0.6rem;
-    letter-spacing: 0.1em;
-    color: var(--black-act);
-}
-
-.credit-text {
-    font-size: 0.65rem;
-    font-family: var(--font-mono, monospace); /* Monospace gives it a "typed" archival feel */
-    text-transform: uppercase;
 }
 
 .composer-bio {
@@ -425,12 +450,11 @@ body.home-page-stacked {
     line-height: 1.5;
 }
 
-/* Section 05: Sound - Audio Specimen */
 .audio-specimen {
-    margin-top: 30px;
-    padding: 20px;
-    background: #f4f4f4;
-    border: 1px solid var(--black-act);
+    margin-top: 10px;
+    padding: 30px;
+    border: none !important; 
+    transition: background-color 0.4s ease;
 }
 
 .player-label {
@@ -438,13 +462,23 @@ body.home-page-stacked {
     font-weight: 900;
     font-size: 0.6rem;
     letter-spacing: 0.15em;
-    margin-bottom: 12px;
-    color: var(--pink-act);
+    margin-left: 10px;
+    color: var(--yellow-act); 
+    text-transform: uppercase;
+    border-left: 2px solid var(--pink-act);
+    padding-left: 10px;
 }
 
-.bauhaus-audio {
+.underline:hover{
+    text-decoration: underline;
+}
+
+.hindemith-audio {
     width: 100%;
     height: 35px;
-    /* This filter makes the standard Chrome/Safari player match a dark Bauhaus aesthetic */
     filter: invert(100%) hue-rotate(180deg) brightness(1.2);
+}
+
+.body-align{
+    margin-top: -30px;
 }
