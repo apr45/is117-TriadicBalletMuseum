@@ -41,6 +41,13 @@ A systematic log of successful prompts used to generate the design, code, and co
 * **Goal:** Creating a top-down, scrolling experience covering the 5 core content areas of the Triadic Ballet: Origin, Concept, Acts, Costumes, and Music.
 * **Prompt Text:** > "Moving on to Sprint 2, let's create a layout for the home page before we proceed to research and input the necessary information."
 * **Result:** Established full-width horizontal sections for eacg core content area based on the ballet's style.
+
+---
+
+## Phase 7: Research & Information Verification
+* **Goal:** Establish a verified research foundation for the five core sections of the Triadic Ballet exhibit home page.
+* **Prompt Text:** > Let's focus back on the home page and plan our research, based on what you know about the Triadic Ballet. Please provide descriptions for each section and verify your information.
+* **Result:** A comprehensive Project Roadmap and Verification Log detailing the historical, philosophical, and musical context for the site's structural sections.
 ---
 # Example Templete
 ## Phase 2: [Current State of the project]
