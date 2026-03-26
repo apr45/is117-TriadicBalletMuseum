@@ -56,7 +56,30 @@ The AI must prioritize these specific terms to maintain exhibition accuracy:
 | **Avant-Garde** | Art that is experimental, radical, or unorthodox that pushes the boundaries of established tradition, culture, and aesthetics. |
 | **Total Work of Art (Gesamtkunstwerk)** | A creative concept where different forms of art (dance, music, costume, set) are synthesized into a single, unified experience. |
 
-## 7. Verification & Provenance
+## 7. Brand Archetype
+The exhibition must function as a bridge between **Wisdom (Sage)** and **Innovation (Creator)**.
+
+* **The Sage (The Seeker of Truth):**
+    * **Objective:** To provide clarity and expert analysis of Schlemmer's complex theories.
+    * **Execution:** Use high-fidelity archival links, detailed verification logs, and a restrained, grid-based layout to communicate intelligence and rationality.
+* **The Creator (The Visionary):**
+    * **Objective:** To celebrate the avant-garde spirit and original expression of the Bauhaus.
+    * **Execution:** Use "triadic" color-shifting filters and interactive geometry to empower the user to "reconstruct" the lost performance.
+
+## 8. Cialdini’s Persuasion Principles
+Apply these three principles to increase user engagement and authority:
+
+1.  **Authority (Expert Guidance):**
+    * **Tactic:** Position all data as "Archival Reconstructions" rather than mere descriptions.
+    * **Execution:** Every claim must have a visible `` or `SOURCE:` link. Using official sources like the "Bauhaus-Archiv Berlin" immediately establishes legitimacy.
+2.  **Unity (The "Shared Identity" Effect):**
+    * **Tactic:** Invite the user into a specific "tribe" of avant-garde enthusiasts.
+    * **Execution:** Use inclusive, scholarly language like "Our collective reconstruction" or "The viewer’s role in the triad," framing the site as a shared intellectual journey.
+3.  **Commitment & Consistency (Small "Yeses"):**
+    * **Tactic:** Encourage users to take small actions that align with the "analytical" goal of the site.
+    * **Execution:** Use low-friction interactions (hovering for definitions, playing audio specimens) to lead the user toward deeper engagement with long-form historical text.
+
+## 10. Verification & Provenance
 All historical claims, technical specifications, and architectural analysis must be cross-referenced to ensure the exhibition remains educationally sound.
 
 * **Evidence Standard:** Every factual claim must be logged in `VERIFICATION.md`.
