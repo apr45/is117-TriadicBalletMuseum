@@ -1,0 +1,122 @@
+/* DOSSIER LAYOUT */
+.dossier-container {
+    background: var(--white-bg);
+    overflow-x: hidden;
+}
+
+.dossier-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding: 0px 3vw;
+    background-color: var(--black-act);
+    align-items: center;
+}
+
+.hero-right{
+    margin-left: 10%;
+}
+
+.schlemmer-image-frame {
+    width: 600px; 
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    object-position: 50% 25%; 
+    filter: grayscale(1) contrast(1.2);
+}
+
+.image-container.relative {
+    position: relative;
+    display: flex;
+}
+
+.archival-source.overlay {
+    position: absolute;
+    bottom: 20px;
+    right: -25px;
+    background-color: #f9f9f9;
+    padding: 6px 6px;
+}
+
+.archival-title {
+    font-size: 8rem;
+    line-height: 0.75;
+    text-transform: uppercase;
+    color: var(--white-neutral);
+}
+
+/* HORIZONTAL SCROLLING TRACK */
+.dossier-track {
+    display: flex;
+    overflow-x: auto;
+    padding: 60px 5vw;
+    gap: 40px;
+}
+
+.dossier-panel {
+    flex: 0 0 450px;
+    border-top: 15px solid;
+    padding: 30px;
+    background: #f9f9f9;
+    scroll-snap-align: start;
+}
+
+.act-i-border { border-color: var(--yellow-act); }
+.act-ii-border { border-color: var(--pink-act); }
+.act-iii-border { border-color: var(--black-act); }
+
+/* TYPOGRAPHY */
+.metadata-box {
+    margin-top: -50px; 
+    padding-left: 15px;
+    margin-left: 2%;
+    border-left: 2px solid var(--pink-act);
+}
+
+.mono-label {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    font-weight: 900; 
+    color: var(--yellow-act);
+}
+
+.theoretical-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: var(--black-act);
+}
+
+/* --- PANEL FOOTER: TOP-DOWN LINKS --- */
+.source-footer.stacked {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    
+}
+
+.source-footer.stacked .global-source-link {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--yellow-act);
+    transition: color 0.2s ease;
+    margin-top: 2.3px;
+    margin-bottom: 2.3px;
+}
+
+.source-footer.stacked .global-source-link:nth-of-type(n+2) {
+    flex-basis: 100%;
+    padding-left: 80px;
+}
+
+.source-footer.stacked .global-source-link:hover {
+    text-decoration: underline;
+}

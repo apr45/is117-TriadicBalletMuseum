@@ -366,21 +366,8 @@ body.home-page-stacked {
     gap: 20px;
 }
 
-.composer-image-frame {
-    position: relative;
-    aspect-ratio: 3/4;
-    border: 2px solid var(--black-act);
-    background: #f0f0f0;
-    overflow: hidden;
-}
-
-.composer-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(1) contrast(1.2) brightness(1.1);
-    transition: all 0.5s ease;
+.body-align{
+    margin-top: -30px;
 }
 
 .composer-showcase {
@@ -393,61 +380,28 @@ body.home-page-stacked {
 }
 
 .composer-image-frame {
-    width: 100%;
-    max-width: 550px;
-    border: 2px solid var(--black-act);
-    background: var(--black-act);
-    overflow: hidden;
-
-}.composer-image-frame {
+    aspect-ratio: 3/4;
     width: 100%;
     max-width: 350px;
-    margin-top: -6%;
     border: 2px solid var(--black-act);
     background: var(--black-act);
     overflow: hidden;
+    margin-bottom: 2%;
 }
 
-.sound-theory-notes {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border-left: 1px solid var(--black-act);
-    padding-left: 30px;
-}
-
-.sound-info-block {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.note-label {
-    font-weight: 900;
-    font-size: 0.7rem;
-    color: var(--pink-act);
-    letter-spacing: 0.2em;
+.composer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-}
-
-.note-item p {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    filter: grayscale(1) contrast(1.2) brightness(1.1);
+    transition: all 0.5s ease;
 }
 
 .composer-credit {
-    margin-top: 12px;
     display: flex;
     gap: 8px;
     align-items: baseline;
-}
-
-.composer-bio {
-    margin-top: 25px;
-    font-size: 0.85rem;
-    line-height: 1.5;
 }
 
 .audio-specimen {
@@ -457,28 +411,8 @@ body.home-page-stacked {
     transition: background-color 0.4s ease;
 }
 
-.player-label {
-    display: block;
-    font-weight: 900;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    margin-left: 10px;
-    color: var(--yellow-act); 
-    text-transform: uppercase;
-    border-left: 2px solid var(--pink-act);
-    padding-left: 10px;
-}
-
-.underline:hover{
-    text-decoration: underline;
-}
-
 .hindemith-audio {
     width: 100%;
     height: 35px;
     filter: invert(100%) hue-rotate(180deg) brightness(1.2);
-}
-
-.body-align{
-    margin-top: -30px;
 }

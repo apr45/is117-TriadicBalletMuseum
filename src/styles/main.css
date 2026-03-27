@@ -183,3 +183,34 @@ body {
 .btn-cta:active {
     background-color: var(--yellow-act);
 }
+
+/* Global Source Citation */
+.global-source {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black-act);
+    font-weight: 900;
+}
+
+.global-source::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 1.2rem;
+    background-color: var(--pink-act);
+    transition: background-color 0.3s ease;
+}
+
+.global-source-link{
+    color: var(--yellow-act);
+}
+
+.global-source-link:hover{
+    text-decoration: underline;
+}

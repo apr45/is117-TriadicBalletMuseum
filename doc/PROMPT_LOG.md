@@ -48,6 +48,21 @@ A systematic log of successful prompts used to generate the design, code, and co
 * **Goal:** Establish a verified research foundation for the five core sections of the Triadic Ballet exhibit home page.
 * **Prompt Text:** > Let's focus back on the home page and plan our research, based on what you know about the Triadic Ballet. Please provide descriptions for each section and verify your information.
 * **Result:** A comprehensive Project Roadmap and Verification Log detailing the historical, philosophical, and musical context for the site's structural sections.
+
+---
+
+## Phase 8: AGENTS.md Update
+* **Goal:** Update AGENTS.md to integrate specific psychological and branding frameworks that align with the site's "Archival" and "Bauhaus" identity.
+* **Prompt Text:** > "Update AGENTS.md as I want to consider which principles of Cialdini’s persuasion principles and brand archetype work best on this site."
+* **Result:** Analyzed the visual and narrative tone of the project to suggest the Sage/Creator hybrid archetype and the Authority principle as the primary drivers for credibility and engagement.
+
+---
+
+## Phase 9: Biography Page Outline
+* **Goal:** Structure a comprehensive page outline for the Oskar Schlemmer biography, applying the newly defined Sage/Creator archetypes from AGENTS.md.
+* **Prompt Text:** > "With the updated AGENTS.md, let's work on the biography page concerning Oskar Schlemmer. Let's build an outline of that page before researching."
+* **Result:** Developed a high-level skeletal structure for the biography page, aligning with the horizontal "Dossier Track" layout and the high-contrast Triadic Ballet/Bauhaus aesthetic.
+
 ---
 # Example Templete
 ## Phase 2: [Current State of the project]

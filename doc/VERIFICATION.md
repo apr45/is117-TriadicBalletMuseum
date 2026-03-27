@@ -60,4 +60,49 @@ This document serves as the high-confidence "Source of Truth" for the Triadic Ba
 * **Claim:** Only 8 minutes of the original collaborative music survived; however, fragments are preserved within Hindemith’s Suite for Mechanical Organ.
 * **Source Link(s):** [https://albertehrnrooth.com/wp-content/uploads/2020/09/Bauhaus-Limelight-2019.pdf](https://albertehrnrooth.com/wp-content/uploads/2020/09/Bauhaus-Limelight-2019.pdf)
 * **Notes:** Although the complete 1922 score was lost, these surviving fragments from the Suite for Mechanical Organ provide the essential "acoustic DNA" for modern reconstructions.
+
+### Claim 12
+* **Claim:** Began career with an inlay workshop apprenticeship (1903–1905) while studying in Stuttgart.
+* **Source Link(s):** [https://www.britannica.com/biography/Oskar-Schlemmer](https://www.britannica.com/biography/Oskar-Schlemmer)
+* **Notes:** Sources confirm his early training in marquetry/inlay design before his academic art studies.
+
+### Claim 13
+* **Claim:** Moved to Berlin in 1910 before returning to Stuttgart to study under Adolf Hölzel.
+* **Source Link(s):** [https://www.museothyssen.org/en/collection/artists/schlemmer-oskar](https://www.museothyssen.org/en/collection/artists/schlemmer-oskar)
+* **Notes:** Hölzel’s influence is noted as a turning point for Schlemmer’s move toward constructive abstraction.
+
+### Claim 14
+* **Claim:** Received an invitation from Walter Gropius to teach in Weimar the same year he married.
+* **Source Link(s):** [https://www.museothyssen.org/en/collection/artists/schlemmer-oskar](https://www.museothyssen.org/en/collection/artists/schlemmer-oskar)
+* **Notes:** Gropius invited him in late 1920; he married Helena Tutein and joined the faculty in early 1921.
+
+### Claim 15
+* **Claim:** Schlemmer initially directed the mural and sculpture departments before pivoting to the stage.
+* **Source Link(s):** [https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Schlemmer-Oskar-1444](https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Schlemmer-Oskar-1444)
+* **Notes:** Archives confirm he directed the mural workshop (1920-22) and sculpture (1921-25) before his theater focus.
+
+### Claim 16
+* **Claim:** Schlemmer's fascination with stylized, faceless figures culminated in a specialized pedagogy.
+* **Source Link(s):** [https://artsandculture.google.com/story/the-legacy-of-bauhaus-master-oskar-schlemmer/mwXB-i7Y-5JnKQ?hl=en](https://artsandculture.google.com/story/the-legacy-of-bauhaus-master-oskar-schlemmer/mwXB-i7Y-5JnKQ?hl=en)
+* **Notes:** Sources link his paintings of "type" figures directly to his 1928-29 course "Der Mensch" (The Human Being).
+
+### Claim 17
+* **Claim:** Schlemmer left the school due to the increasingly political climate in Germany.
+* **Source Link(s):** [https://www.britannica.com/biography/Oskar-Schlemmer](https://www.britannica.com/biography/Oskar-Schlemmer)
+* **Notes:** Resignation date and political context (rising National Socialism) are historically consistent across all three links.
+
+### Claim 18
+* **Claim:** Relocated to Breslau and later Berlin (Vereinigte Staatsschulen) until his 1933 dismissal.
+* **Source Link(s):** [https://www.britannica.com/biography/Oskar-Schlemmer](https://www.britannica.com/biography/Oskar-Schlemmer)
+* **Notes:** Archives confirm he moved to Breslau in 1929 and was dismissed from his Berlin professorship by the Nazis in 1933.
+
+### Claim 19
+* **Claim:** His work was destroyed or featured in the 1937 "Entartete Kunst" (Degenerate Art) exhibition.
+* **Source Link(s):** [https://artsandculture.google.com/story/the-legacy-of-bauhaus-master-oskar-schlemmer/mwXB-i7Y-5JnKQ?hl=en](https://artsandculture.google.com/story/the-legacy-of-bauhaus-master-oskar-schlemmer/mwXB-i7Y-5JnKQ?hl=en)
+* **Notes:** Sources note that five of his works were exhibited in Munich in 1937 to be ridiculed by the regime.
+
+### Claim 20
+* **Claim:** Created the "Fensterbilder" (Window Pictures) series before his death from a heart attack in 1943.
+* **Source Link(s):** [https://www.schlemmer.org/oskar-schlemmer](https://www.schlemmer.org/oskar-schlemmer)
+* **Notes:** The series of 18 small-scale paintings is documented as his final creative output before passing in Baden-Baden.
 ---
