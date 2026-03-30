@@ -64,6 +64,13 @@ A systematic log of successful prompts used to generate the design, code, and co
 * **Result:** Developed a high-level skeletal structure for the biography page, aligning with the horizontal "Dossier Track" layout and the high-contrast Triadic Ballet/Bauhaus aesthetic.
 
 ---
+
+## Phase 2: Costume Gallery 
+* **Goal:** Construct a high-fidelity gallery for the Triadic Ballet exhibit featuring an initial selection of five archival costume images.
+* **Prompt Text:** > "Let's create a gallery for the exhibit. Follow the AGENTS.md to build a gallery with about 5 images for now (later, we will expand how many images are displayed in the gallery). Ensure that metadata is displayed below the image, including its name, artist, and date of creation."
+* **Result:** Developed a 3-column grid system where images can expand without disrupting the layout. Each item includes a structured metadata block for authority and provenance.
+
+---
 # Example Templete
 ## Phase 2: [Current State of the project]
 * **Goal:** [e.g., Create the "Triad" Color Theme]
