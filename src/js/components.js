@@ -13,7 +13,7 @@ export function injectLayout() {
         <nav class="nav-links">
         <ul>
             <li><a href="home.html">HOME</a></li>
-            <li><a href="bauhaus.html">BAUHAUS</a></li>
+            <!-- <li><a href="bauhaus.html">BAUHAUS</a></li> -->
             <li><a href="biography.html">BIOGRAPHY</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
             <li><a href="archive.html">ARCHIVE</a></li>
