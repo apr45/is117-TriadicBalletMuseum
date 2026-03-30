@@ -1,0 +1,109 @@
+.gallery-container {
+    padding-top: 80px;
+    background-color: var(--white-bg);
+    min-height: 100vh;
+}
+
+/* HEADER BOX*/
+.gallery-header {
+    background-color: var(--black-act);
+    padding: 60px 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-header .archival-title {
+    color: var(--white-neutral);
+    margin: 0;
+    font-size: 6rem;
+    line-height: 0.85;
+    text-transform: uppercase;
+}
+
+.gallery-header .mono-label {
+    display: inline-block;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    font-weight: 900; 
+    color: var(--yellow-act);
+    text-transform: uppercase;
+    
+    margin-top: 30px; 
+    padding-left: 15px;
+    margin-left: 1%;
+    border-left: 2px solid var(--pink-act);
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px;
+    padding: 60px 5vw; /* Re-apply the side padding here */
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* GALLERY IMAGE FRAME */
+.image-frame {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #f0f0f0;
+    filter: grayscale(1) contrast(1.1);
+    transition: filter 0.5s ease, padding 0.5s cubic-bezier(0.4, 0, 0.2, 1), background 0.5s ease;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    padding: 15%; 
+    box-sizing: border-box;
+    clip-path: none;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.image-frame:hover {
+    filter: grayscale(0) contrast(1);
+    background: var(--white-neutral);
+    padding: 2%; 
+}
+
+
+/* METADATA BLOCK */
+.item-metadata {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--pink-act);
+    padding-left: 12px;
+}
+
+.meta-name {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--yellow-act);
+}
+
+.meta-artist, .meta-date {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--black-act);
+    margin-top: 4px;
+}
