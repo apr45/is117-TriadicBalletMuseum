@@ -1,0 +1,84 @@
+.archive-container {
+    padding-top: 80px;
+    background-color: var(--white-bg);
+    min-height: 100vh;
+}
+
+.archive-header {
+    background-color: var(--black-act); /* Act III: Mystical/Fantasy */
+    padding: 60px 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.archive-header .archival-title {
+    color: var(--white-neutral);
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
+.archive-header .mono-label {
+    display: inline-block;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    line-height: 1.2;
+    font-weight: 900; 
+    color: var(--yellow-act);
+    text-transform: uppercase;
+    
+    margin-top: 10px; 
+    padding-left: 15px;
+    margin-left: 1%;
+    border-left: 2px solid var(--pink-act);
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 5vw;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--black-act);
+    filter: grayscale(1);
+    transition: filter 0.5s ease, transform 0.5s ease;
+    border-left: 5px solid var(--pink-act);
+}
+
+.video-frame:hover {
+    filter: grayscale(0);
+    transform: scale(1.02);
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.item-metadata {
+    margin-top: 20px;
+    border-left: 2px solid var(--pink-act);
+    padding-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.meta-type {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 900;
+    color: var(--yellow-act);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.meta-desc{
+    margin-top: 5px;
+    font-size: 0.9rem;;
+}
