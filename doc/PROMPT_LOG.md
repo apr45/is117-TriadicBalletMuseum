@@ -65,10 +65,17 @@ A systematic log of successful prompts used to generate the design, code, and co
 
 ---
 
-## Phase 2: Costume Gallery 
+## Phase 10: Costume Gallery 
 * **Goal:** Construct a high-fidelity gallery for the Triadic Ballet exhibit featuring an initial selection of five archival costume images.
 * **Prompt Text:** > "Let's create a gallery for the exhibit. Follow the AGENTS.md to build a gallery with about 5 images for now (later, we will expand how many images are displayed in the gallery). Ensure that metadata is displayed below the image, including its name, artist, and date of creation."
 * **Result:** Developed a 3-column grid system where images can expand without disrupting the layout. Each item includes a structured metadata block for authority and provenance.
+
+---
+
+## Phase 11: Media & Reinterpretations
+* **Goal:** Curate and document high-fidelity video assets for the archive.html page, contrasting historical reconstructions with modern interpretations.
+* **Prompt Text:** > "Let's make an archive for past reconstructions and modern reinterpretations of the Triadic Ballet. For the Archive Page, I would like to include at least two videos: one featuring the 1970 reconstruction by Margarete Hastings, Franz Schömbs, and Georg Verden, and another showcasing the Bayerisches Junior Ballet München's reinterpretation."
+* **Result:** Outlined the video embedding strategy for the Archive Page, ensuring that each media asset is accompanied by technical metadata.
 
 ---
 # Example Templete
