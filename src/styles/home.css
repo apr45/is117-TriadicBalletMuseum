@@ -1,7 +1,9 @@
 .top-down-exhibit {
     display: flex;
-    flex-direction: column;
-    padding-top: 80px;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden; /* Disable manual scroll for button-only control */
+    scroll-behavior: smooth;
 }
 
 /* Mathematical Grid Background */
@@ -23,39 +25,178 @@ body.home-page-stacked {
 .stack-section {
     display: grid;
     grid-template-columns: 150px 1fr;
-    min-height: 60vh;
-    padding: 60px;
-    position: relative;
+    width: 100vw;       /* Strict viewport width */
+    min-width: 100vw;   /* Force consistency */
+    height: 100vh;
+    padding: 0 100px;   /* Adjusted padding for centering */
+    height: 100vh;
+    padding: 100px;
     box-sizing: border-box;
+    scroll-snap-align: start; /* Snap point */
+    flex-shrink: 0; /* Prevent sections from squeezing together */
+    white-space: normal; /* Ensures text wraps to the next line */
 }
+
 
 .stack-section.no-padding { padding: 0; grid-template-columns: 1fr; }
 
 .stack-meta {
     font-weight: 900;
+    height: 80vh; /* Lock height to the screen, not the content */
     font-size: 0.8rem;
     letter-spacing: 0.2em;
     border-right: 2px solid var(--black-act);
     display: flex;
     align-items: flex-start;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .stack-content {
-    padding-left: 60px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: liquidSpring 0.9s cubic-bezier(0.68, -0.6, 0.32, 1.6) both;
+    will-change: transform, opacity;
 }
 
+@keyframes liquidSpring {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.origin-reveal-description, 
+.origin-title,
+.definition-popup,
+.act-panel {
+    transition: 
+        max-height 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+        opacity 0.5s ease,
+        transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+        flex 0.7s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
+}
+
+.body-text, .concept-shape-row {
+    animation-delay: 0.35s;
+}
+
+/* Global Button Styling */
+.nav-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    /* Add smooth transition for the opacity change */
+    transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1), 
+                transform 0.3s ease;
+}
+
+#origin .prev-btn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-control .shape-arrow-left, 
+.nav-control .shape-arrow-right {
+    transition: border-color 0.4s cubic-bezier(0.19, 1, 0.22, 1), 
+                transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-control:hover .shape-arrow-left {
+    border-right-color: var(--black-act);
+    transform: translateX(-5px); /* Subtle mechanical nudge */
+}
+
+.nav-control:hover .shape-arrow-right {
+    border-left-color: var(--black-act);
+    transform: translateX(5px); /* Subtle mechanical nudge */
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+/* Triadic Geometric Arrows */
+.shape-arrow-left {
+    width: 0; height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid var(--pink-act); /* Pink for Left */
+}
+
+.shape-arrow-right {
+    width: 0; height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid var(--yellow-act); /* Yellow for Right */
+}
+
+/* Act III specific contrast: if we are at the end, make arrows black/white */
+.black-theme .shape-arrow-left { border-right-color: var(--white-neutral); }
+.black-theme .shape-arrow-right { border-left-color: var(--white-neutral); }
+
 /* Section 01 Layout */
-.origin-title { font-size: 5.5rem; line-height: 0.8; margin: 15px; color: var(--yellow-act)}
+#origin .stack-content {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers the title horizontally */
+    text-align: center;
+}
+
+.interactive-origin-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: help;
+}
+
+.origin-reveal-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding-left: 200px; /* Aligns with the 'BALLET' indent */
+    transition: 
+        max-height 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 0.6s ease,
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(20px);
+}
+
+.origin-title { 
+    margin: 15px; color: var(--yellow-act);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
+    z-index: 2;
+    font-size: 8rem; /* Increased from 5.5rem for impact */
+    line-height: 0.75;
+    margin-left: 40px;
+    margin-top: 180px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+}
+
 .indent-1 { padding-left: 100px; color: var(--pink-act); }
 .indent-2 { padding-left: 200px; color: var(--black-act)}
-.indent-3 {
-    margin-left: 250px;
-    width: 80%;
-    padding-right: 50px;
+
+.interactive-origin-hero:hover .origin-title {
+    transform: translateY(-150px);
+}
+
+.interactive-origin-hero:hover .origin-reveal-description {
+    max-height: 300px; /* Adjust based on text length */
+    opacity: 1;
+    transform: translateY(-150px); /* Moves up slightly to close the gap */
 }
 
 .body-text {
@@ -66,26 +207,143 @@ body.home-page-stacked {
     color: var(--black-act);
 }
 
+.origin-reveal-description .body-text {
+    margin-top: 20px;
+    max-width: 600px;
+    
+}
+
 /* Section 02 Layout */
+.concept-header-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
 .concept-title {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 0.8;           
-    margin: 15px;                   
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+    flex-direction: column;
+    letter-spacing: -0.05em;
+    margin: 0;
+    margin-left: 40px;
 }
 
 .txt-yellow { color: var(--yellow-act); }
 .txt-pink   { color: var(--pink-act); }
 .txt-black  { color: var(--black-act); }
 
-.concept-desc {
-    margin-top: 30px;                   
-    font-size: 1.1rem;
-    line-height: 1.75;
+/* Clickable Trigger Style */
+.concept-title.trigger-hover {
+    position: relative;
+    display: inline-block; /* Wraps the hit area tightly around the text */
+    cursor: help;
 }
 
-.indent-concept {
-    margin-left: 100px;
+/* The Pop-up Panel */
+.definition-popup {
+    position: absolute;
+    /* Change bottom to top to move it below the text */
+    top: 120%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    width: 280px;
+    background: var(--white-neutral);
+    border: 2px solid var(--black-act);
+    box-shadow: 8px 8px 0px var(--yellow-act);
+    
+    /* Reset and layout styles */
+    text-align: left;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: normal;
+    
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+
+    padding: 15px 20px 20px 20px; /* Reduced the top padding (first value) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.trigger-hover:hover .definition-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(10px); /* Slides down into place */
+}
+
+.definition-popup.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto; /* Re-enable clicking when visible */
+}
+
+.popup-header {
+    border-bottom: 1px solid var(--black-act);
+}
+
+.popup-tag {
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: var(--pink-act);
+    font-weight: 1000;
+    margin-top: 0;           /* Explicitly remove any top margin */
+    padding-top: 0;          /* Explicitly remove any top padding */
+    display: block;          /* Ensure it behaves like a block element */
+    line-height: 1;          /* Tighten vertical space */
+    margin-bottom: -5px;
+}
+
+
+/* The Description Box */
+.concept-info-box {
+    margin-top: 20px;
+    border-left: 4px solid var(--black-act);
+    padding: 15px 30px;
+    max-width: 500px;
+    align-self: center; /* Centers the description under the title */
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.blueprint-label {
+    font-family: monospace;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: var(--pink-act);
+    margin-bottom: 8px;
+}
+
+.concept-desc-new {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.highlight-txt {
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-color: var(--yellow-act);
+}
+
+/* Ensure the Section 02 grid doesn't bleed */
+#concept .stack-content {
+    animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUpFade {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .concept-shape-row {
@@ -195,24 +453,28 @@ body.home-page-stacked {
 
 /* Section 03 Header Styling */
 .act-header-group {
-    margin-bottom: 40px;
+    margin-bottom: -40px;
 }
 
 .act-main-title {
-    font-size: 4.5rem;
-    font-weight: 700;
+    font-size: 8rem;
+    font-weight: 900;
     line-height: 0.8;  
     color: var(--black-act);
     margin-top: 2%;
     text-transform: uppercase;
     letter-spacing: -0.02em;
+    margin-left: 75px;
 }
 
-.act-main-desc {
-    margin-top: -20px;                   
-    font-size: 1.1rem;
-    line-height: 1.75;
-    color: var(--black-act);
+.act-main-title.trigger-hover {
+    position: relative;
+    display: inline-block; /* Wraps the hit area tightly around the text */
+    cursor: help;
+}
+
+.indent-3{
+     padding-left: 250px; color: var(--black-act)
 }
 
 #structure .stack-content {
@@ -228,8 +490,10 @@ body.home-page-stacked {
 .act-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 60vh;
-    width: 100%;
+    height: 45vh;
+    width: 90%;
+    margin-top: -60px;
+    margin-left: 40px;
 }
 
 .act-panel {
@@ -272,39 +536,55 @@ body.home-page-stacked {
     width: 100%;
 }
 
-.form-text-block {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#form .interactive-origin-hero {
+    align-items: flex-start; /* Keeps text left-aligned in Section 4 */
+    text-align: left;
 }
 
-.form-title-lg {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 0.8; 
-    margin-top: 15px; 
-    margin-bottom: 0px;
+#form .origin-title {
+    margin-top: 80px; /* Resetting the specific margin from Section 1 */
+    margin-left: 0;
 }
 
-.indent-form {
-    margin-top: -10px;                   
+#form .origin-reveal-description {
+    padding-left: 0; /* Resetting Section 1's BALLET indent */
+    max-width: 500px;
+    margin-bottom: -100px;
+}
+
+#form .interactive-origin-hero:hover .origin-title {
+    transform: translateY(-80px); /* Slightly less movement than Section 1 */
+}
+
+#form .interactive-origin-hero:hover .origin-reveal-description {
+    transform: translateY(-80px);
+    max-height: 500px;
+}
+
+.indent-form {              
     font-size: 1.1rem;
     line-height: 1.75;
-    margin-left: 60px;
-    max-width: 85%;
+    max-width: 100%;
+    font-weight: 400;
 }
 
 .form-video-showcase {
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 35px;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#form .form-video-showcase {
+    transform: none !important;
+    align-self: center; /* Keeps video vertically centered in the grid */
+}
+
 .form-text-block {
     grid-column: 1;
 }
+
 
 .video-frame {
     width: 100%;
@@ -354,29 +634,60 @@ body.home-page-stacked {
 /* Section 05 Overlay*/
 .sound-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; 
+    grid-template-columns: 1.5fr 1fr;
     gap: 50px;
     align-items: center;
     width: 100%;
 }
 
 .sound-info-block {
+    grid-column: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.body-align{
-    margin-top: -30px;
+#music .interactive-origin-hero {
+    align-items: flex-start; /* Keeps text left-aligned */
+    text-align: left;
+}
+
+#music .origin-title {
+    margin-top: 50px; 
+    margin-left: 0;
+    font-size: 7rem; /* Slightly smaller to fit the grid column */
+}
+
+#music .origin-reveal-description {
+    padding-left: 15px;
+    max-width: 105%; /* Keeps text from bleeding into the image frame */
+}
+
+/* Hover movement for Music Section */
+#music .interactive-origin-hero:hover .origin-title {
+    transform: translateY(-50px);
+}
+
+#music .interactive-origin-hero:hover .origin-reveal-description {
+    transform: translateY(-45px);
+    max-height: 325px;
+    opacity: 1;
+}
+
+/* Ensure the audio player doesn't jump when hovering the text above it */
+#music .audio-specimen {
+    margin-top: -20px;
+    z-index: 5;
 }
 
 .composer-showcase {
-    grid-column: 2;
-    position: relative;
-    padding: 20px;
+    grid-column: 2; /* Explicitly lock to the second column */
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    align-items: flex-start;
+    /* Prevents any inherited hover transforms from the left column */
+    transform: none !important; 
 }
 
 .composer-image-frame {
@@ -405,14 +716,18 @@ body.home-page-stacked {
 }
 
 .audio-specimen {
-    margin-top: 10px;
-    padding: 30px;
+    padding: 20px;
     border: none !important; 
     transition: background-color 0.4s ease;
+    grid-column: 1;
 }
 
 .hindemith-audio {
     width: 100%;
     height: 35px;
     filter: invert(100%) hue-rotate(180deg) brightness(1.2);
+}
+
+#music .interactive-origin-hero:hover .origin-title {
+    transform: translateY(-50px);
 }

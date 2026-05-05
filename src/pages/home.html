@@ -12,48 +12,67 @@
     <div class="bg-spine"></div>
 
     <main class="top-down-exhibit">
+
+        <!-- Directional Navigation Buttons -->
+
         <section class="stack-section border-bottom" id="origin">
-            <div class="stack-meta">01 / ORIGIN</div>
+            <button class="nav-control prev-btn" onclick="scrollPrev()">
+        <div class="shape-arrow-left"></div>
+    </button>
+    <button class="nav-control next-btn" onclick="scrollNext()">
+        <div class="shape-arrow-right"></div>
+    </button>
 
-            <div class="stack-content">
-                <div class="hero-text-wrap">
-                    <h1 class="origin-title">THE<br><span class="indent-1">TRIADIC</span><br><span class="indent-2">BALLET</span></h1>
-                </div>
-        
-                <div class="origin-description-wrap indent-3">
-                    <p class="body-text">
-                        An avant-garde dance piece designed and choreographed by the Bauhaus artist Oskar Schlemmer. 
-                        Transcending traditional performances, <em>Das Triadische Ballett</em> transforms the human form into a medium 
-                        to explore the relationship between the body and space.
-                    </p>
+            <div class="stack-meta">01 /<br>ORIGIN</div>
 
-                    <p class="body-text">
-                        The production stripped off all ornamental amenities associated with traditional ballet, prioritizing geometric 
-                        and restrictive components. First premiered in 1922 at the Württemberg Landestheater in Stuttgart, Schlemmer's masterpiece
-                        combines dance, costume, music, and set design into the ultimate Gesamtkunstwerk.
-                    </p>
-
-                    <p class="body-text">
-                        While the original 1922 film has not survived, the ballet left behind a legacy of modernist, bizarre performance art.
-                    </p>
-                </div>
+            <div class="interactive-origin-hero">
+            <h1 class="origin-title">
+                THE<br>
+                <span class="indent-1">TRIADIC</span><br>
+                <span class="indent-2">BALLET</span>
+            </h1>
+            
+            <!-- This description now lives inside the hover zone -->
+            <div class="origin-reveal-description">
+                <p class="body-text">
+                    An avant-garde dance piece designed and choreographed by the Bauhaus artist Oskar Schlemmer. 
+                    Transcending traditional performances, <em>Das Triadische Ballett</em> transforms the human form into a medium 
+                    to explore the relationship between the body and space.
+                </p>
+                <p class="body-text">
+                    The production stripped off all ornamental amenities associated with traditional ballet, prioritizing geometric 
+                    and restrictive components. First premiered in 1922, it combines dance, costume, music, and set design into the ultimate Gesamtkunstwerk.
+                </p>
             </div>
+        </div>
         </section>
 
         <section class="stack-section border-bottom" id="concept">
-            <div class="stack-meta">02 / CONCEPT</div>
+            <button class="nav-control prev-btn" onclick="scrollPrev()">
+        <div class="shape-arrow-left"></div>
+    </button>
+    <button class="nav-control next-btn" onclick="scrollNext()">
+        <div class="shape-arrow-right"></div>
+    </button>
+
+            <div class="stack-meta">02 /<br>CONCEPT</div>
 
             <div class="stack-content bottom-align-container">
-                <div class="concept-header-group">
-                    <h2 class="concept-title">
-                        <span class="txt-yellow">RULE</span> 
-                        <span class="txt-pink">OF</span> 
-                        <span class="txt-black">THREE</span>
-                    </h2>
-                    <p class="body-text concept-desc indent-concept">
-                        The term "triadic" signifies the foundational concept of the trinity that underpins the structure of the ballet.
-                    </p>
-                </div>
+      <div class="concept-header-group">
+    <h2 class="concept-title trigger-hover">
+        <span class="txt-yellow">RULE</span> 
+        <span class="txt-pink">OF</span> 
+        <span class="txt-black">THREE</span>
+
+        <!-- The popup is now relative to the whole title -->
+        <div class="definition-popup">
+            <span class="popup-tag">THEME</span>
+            <p class="body-text">
+                The term <strong>"triadic"</strong> signifies the foundational concept of the trinity that underpins the structure of the ballet.
+            </p>
+        </div>
+    </h2>
+</div>
         
                 <div class="concept-shape-row">
                     <div class="shape-item circle-frame">
@@ -81,19 +100,31 @@
         </section>
 
         <section class="stack-section border-bottom" id="structure">
-            <div class="stack-meta">03 / STRUCTURE</div>
+            <button class="nav-control prev-btn" onclick="scrollPrev()">
+        <div class="shape-arrow-left"></div>
+    </button>
+    <button class="nav-control next-btn" onclick="scrollNext()">
+        <div class="shape-arrow-right"></div>
+    </button>
+
+            <div class="stack-meta">03 /<br>STRUCTURE</div>
 
             <div class="stack-content">
                 <div class="act-header-group">
-                    <h2 class="act-main-title">
-                        <span class="txt-yellow">THREE</span><span class="txt-black">-</span><span class="txt-pink">PART</span>
-                        <span class="txt-black">STAGE</span>
-                    </h2>
-                    <p class="body-text act-main-desc indent-concept">
-                        <em>The Triadic Ballet</em> is a plotless dance, yet follows a progression of distinct themes, using color theory to set the emotional tone for each act.
-                    </p>
-                </div>
+                     <h2 class="act-main-title trigger-hover">
+        <span class="txt-yellow">THREE</span> 
+        <span class="txt-black">-</span> 
+        <span class="txt-pink">PART</span> 
+        <span class="indent-3">STAGE</span>
 
+        <!-- The popup is now relative to the whole title -->
+        <div class="definition-popup">
+            <span class="popup-tag">VISION</span>
+            <p class="body-text">
+               <em>The Triadic Ballet</em> is a plotless dance, yet follows a progression of distinct themes, using color theory to set the emotional tone for each act.
+            </p>
+        </div>
+    </h2>
             <div class="stack-content full-bleed-acts">
                 <div class="act-container">
                     <div class="act-panel yellow">
@@ -115,52 +146,76 @@
         </section>
 
         <section class="stack-section border-bottom" id="form">
-            <div class="stack-meta">04 / COSTUMES</div>
+            <button class="nav-control prev-btn" onclick="scrollPrev()">
+        <div class="shape-arrow-left"></div>
+    </button>
+    <button class="nav-control next-btn" onclick="scrollNext()">
+        <div class="shape-arrow-right"></div>
+    </button>
+
+            <div class="stack-meta">04 /<br>COSTUMES</div>
 
             <div class="stack-content">
                 <div class="form-cinematic-grid">
-                    <div class="sound-info-block">
-                        <h2 class="form-title-lg">
-                            <span class="txt-yellow">COSTUME</span> 
-                            <span class="txt-pink">AS</span><br>
-                            <span class="txt-black">CONSTRAINT</span>
-                        </h2>
+                    <div class="interactive-origin-hero">
+                <h2 class="origin-title">
+                    <span class="txt-yellow">ATTIRE</span><br> 
+                    <span class="indent-1">AS</span><br>
+                    <span class="indent-2">ART</span>
+                </h2>
 
-                        <div class="indent-form">
-                            <p class="lead-text">Schlemmer crafted 18 bizarre costumes using unconventional, heavy materials, including metal sheets, metal wire, stiff paper-mâché, and padded fabric to form exaggerated silhouettes. Each costume was subordinate to geometric shapes such as cubes, pyramids, spheres, and cylinders to dehumanize the dancers into marionette-like figurines. Dancers were restricted in movement, forced to perform a controlled and reserved choreography in contrast to the gracefulness and fluidity of classical ballet. Tragically, more than half of the costumes were destroyed over time, with the remaining currently preserved in the Neue Staatsgalerie in Stuttgart, Germany.</p>
-                        </div>    
-                    </div>
+                <!-- Hidden until hover -->
+                <div class="origin-reveal-description">
+                    <p class="indent-form">
+                        Schlemmer crafted 18 bizarre costumes using unconventional, heavy materials to form exaggerated silhouettes. Each costume was subordinate to geometric shapes such as cubes, pyramids, spheres, and cylinders to dehumanize the dancers into marionette-like figurines. Dancers were restricted in movement, forced to perform a controlled and reserved choreography in contrast to the gracefulness and fluidity of classical ballet. Tragically, more than half of the costumes were destroyed over time, with the remaining currently preserved in the Neue Staatsgalerie in Stuttgart, Germany.
+                    </p>
+                </div>
+            </div>
 
                     <div class="form-video-showcase">
-                        <div class="video-frame">
-                            <video autoplay muted loop playsinline class="costume-video">
-                                <source src="../../public/videos/Triadisches Ballett von Oskar Schlemmer - Bauhaus (Best Quality) (Clip Version).mp4" type="video/mp4">
-                            </video>
-                            <div class="video-overlay-label"> 
-                                <a href = "https://youtu.be/mHQmnumnNgo" target="_blank" class="label-link">RECONSTRUCTION SOURCE</a>
-                            </div>
-                        </div>
+                <div class="video-frame">
+                    <video autoplay muted loop playsinline class="costume-video">
+                        <source src="../../public/videos/Triadisches Ballett von Oskar Schlemmer - Bauhaus (Best Quality) (Clip Version).mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay-label"> 
+                        <a href="https://youtu.be/mHQmnumnNgo" target="_blank" class="label-link">RECONSTRUCTION SOURCE</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
         </section>
 
         <section class="stack-section border-bottom" id="music">
-            <div class="stack-meta">05 / MUSIC</div>
+           <button class="nav-control prev-btn" onclick="scrollPrev()">
+        <div class="shape-arrow-left"></div>
+    </button>
+    <button class="nav-control next-btn" onclick="scrollNext()">
+        <div class="shape-arrow-right"></div>
+    </button>
+    
+            <div class="stack-meta">05 /<br>MUSIC</div>
 
             <div class="stack-content">
                 <div class="sound-grid">
                     <div class="sound-info-block">
-                        <h2 class="act-main-title">
-                            <span class="txt-yellow">ORIGINAL</span>
-                            <span class="txt-pink">1926</span>
-                            <span class="txt-black">SCORE</span>
-                        </h2>
+                        <div class="interactive-origin-hero">
+        <h2 class="origin-title">
+            <span class="txt-yellow">ORIGINAL</span><br>
+            <span class="indent-1 txt-pink">1926</span><br>
+            <span class="indent-2 txt-black">SCORE</span>
+        </h2>
 
-                        <div class="indent-form">
-                            <p class="body-align">
-                            When the Triadic Ballet made its debut in 1922, Schlemmer utilized an assortment of classical music before collaborating with Paul Hindemith to compose a new score for the performance. Hindemith experimented with mechanical organs to craft a unique score. Only 8 minutes of the original music have survived; however, Hindemith had incorporated fragments of the score into the <em>Suite for Mechanical Organ</em>.
-                            </p>
+        <!-- This content is hidden until hover -->
+        <div class="origin-reveal-description">
+            <p class="body-text">
+                When the Triadic Ballet made its debut in 1922, Schlemmer utilized an assortment of classical music before collaborating with Paul Hindemith to compose a new score for the performance. 
+                Hindemith experimented with mechanical organs to craft a unique score. 
+            </p>
+            <p class="body-text">
+                Only 8 minutes of the original music have survived; however, Hindemith had incorporated fragments of the score into the <em>Suite for Mechanical Organ</em>.
+            </p>
+        </div>
                     
                             <div class="audio-specimen border-all">
                                 <audio controls class="hindemith-audio">
